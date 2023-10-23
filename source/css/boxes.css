@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+}
+div {
+  border-radius: 1rem;
+}
+body {
+  margin: 0;
+  & main {
+    top: 3rem;
+    align-self: center;
+    width: 60%;
+    padding: 1rem;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    & section {
+      width: 100%;
+    }
+    & a {
+      width: 90%;
+      margin: 1rem auto;
+      display: flex;
+      & div.container {
+        display: flex;
+        width: 100%;
+        padding: 1rem;
+        align-items: flex-end;
+        justify-content: space-between;
+        flex-direction: row;
+        & img {
+          border-radius: 1rem;
+          width: 10rem;
+          height: 10rem;
+        }
+        & div.data {
+          height: 10rem;
+          width: 100%;
+          word-wrap: break-word;
+          display: flex;
+          padding: 0 1rem;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          & div.info {
+            overflow: hidden;
+          }
+          & div.meta {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+          }
+        }
+      }
+    }
+    & div.header {
+      padding: 1rem;
+      display: flex;
+      width: 100%;
+      margin: 1rem auto;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-direction: row;
+      & img {
+        border-radius: 1rem;
+        width: 15rem;
+        height: 15rem;
+      }
+      & div.data {
+        height: 15rem;
+        width: 100%;
+        word-wrap: break-word;
+        display: flex;
+        padding: 0 1rem;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        & div.meta {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+  & nav {
+    height: 3rem;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    left:0;
+    right: 0;
+    & input {
+      height: 1rem;
+      width: 10rem;
+    }
+  }
+}

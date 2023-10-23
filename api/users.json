@@ -1,0 +1,4 @@
+{
+  "$schema": "../schemas/users.json",
+  "content": [{ "id": 0, "name": "AdriánCraft" }, {"id":1, "name": "Jun Seo Park"}]
+}

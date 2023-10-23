@@ -1,0 +1,74 @@
+body {
+  --color: #222;
+  --color-a: #088;
+  --background: #888;
+  --container-background: rgba(255, 255, 255, 0.3);
+  --nav-background: #fff;
+
+  background: var(--background);
+  color: var(--color);
+}
+body#dark {
+  --color: #fff;
+  --color-a: #0ff;
+  --background: #222;
+  --container-background: rgba(127, 127, 127, 0.3);
+  --nav-background: #000;
+}
+.deprecated {
+  & h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #f00;
+  }
+}
+.hide {
+  display: none;
+}
+main {
+  background: var(--container-background);
+  & a {
+    color: var(--color);
+    text-decoration: none;
+    & div.container {
+      background-color: var(--container-background);
+      & img {
+        background: var(--container-background);
+      }
+    }
+  }
+  & div.header > img {
+    background: var(--container-background);
+  }
+  & div.info > p > a {
+    margin: 0;
+    width: fit-content;
+    display: contents;
+    width: auto;
+    color: var(--color-a);
+    &:hover {
+      color: rgb(255, 0, 0);
+    }
+  }
+}
+nav {
+  background: var(--nav-background);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--container-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-a);
+}
