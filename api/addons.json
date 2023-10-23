@@ -311,7 +311,7 @@
           "changes": [],
           "description": "Este fue creado para un servidor antiguo",
           "tags": ["mesa", "bloque", "herramientas", "entidad", "mineral", "projectil", "JunSP13", "servidor"],
-          "icon": "/source/image/addon/ChoesinCraft/icono.png",
+          "icon": "/source/image/addon/ChoesinCraft/icon.png",
           "url": "https://www.mediafire.com/file/du063qv9gtiosxo/ChoesinCraft.mcaddon/file"
         }
       ],
@@ -355,7 +355,7 @@
           "tags": ["mesa", "cofre", "bloque", "herramientas"],
           "description": "Agrega variaciones de bloques e items de cada tipo de madera los cuales para craftear se nesita una mesa especial (mesa de tallado) a continuacion los crafteos de los objetos",
           "url": "https://www.mediafire.com/file/33w1ylafln149fh/Variantes_de_maderas.mcaddon/file",
-          "icon": "/source/image/addon/Variantes-de-madera/icono.png"
+          "icon": "/source/image/addon/Variantes-de-madera/icon.png"
         }
       ]
     }
