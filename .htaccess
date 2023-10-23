@@ -5,4 +5,4 @@ RewriteRule ^(.*)$ $1.html
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([\/]*addon|textura|content) index.html
+RewriteRule ^([\/]*addon|textura|content) /index.html
