@@ -2,9 +2,11 @@ import { createElementDom } from './modules/dom.js';
 import $ from './modules/$.js';
 import api from './load/api.js';
 
+
+const DEFAULT_ICON = '/source/image/proximamente.png'
+
 function load() {
   const query = location.pathname
-    .replace('/spa', '')
     .split('/')
     .filter(Boolean);
   if (!query[0] || query[0] === 'addon' || query[0] === 'textura') {
@@ -75,7 +77,7 @@ function list(data, users) {
         ?.map(c => users.find(u => u.id === c)?.name || '')
         .join(', ') || '';
     const icon =
-      versions.find(v => v.icon)?.icon || '/src/img/proximamente.png';
+      versions.find(v => v.icon)?.icon || DEFAULT_ICON;
     const description =
       versions.find(v => v.description)?.description ||
       `Este es un recurso crreado por ${
@@ -113,7 +115,7 @@ function list(data, users) {
     $('main').append(
       createElementDom(
         'a',
-        { href: `/spa/content/${item.name.replaceAll(' ', '-')}`, class:(show ? '' : ' hide') },
+        { href: `/content/${item.name.replaceAll(' ', '-')}`, class:(show ? '' : ' hide') },
         data
       )
     );
@@ -141,7 +143,7 @@ function content([item, show], users) {
     item.collaborators
       ?.map(c => users.find(u => u.id === c)?.name || '')
       .join(', ') || '';
-  const icon = versions.find(v => v.icon)?.icon || '/src/img/proximamente.png';
+  const icon = versions.find(v => v.icon)?.icon || DEFAULT_ICON;
   const description =
     versions.find(v => v.description)?.description ||
     `Este es un recurso crreado por ${
