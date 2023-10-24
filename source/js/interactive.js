@@ -7,6 +7,6 @@ $('#search').keyup(function (proxy, _event) {
   if (inter) clearTimeout(inter);
   inter = setTimeout(()=>{
     const value = element.value.replaceAll(' ', '-');
-    location.pathname = `/spa/search/${value}`;
+    location.pathname = `/search/${value}`;
   }, 500);
-})
+});
