@@ -86,6 +86,15 @@ body {
         }
       }
     }
+    & div.info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & img {
+        padding: 1rem;
+        width: 30rem;
+      }
+    }
   }
   & nav {
     height: 3rem;
@@ -97,7 +106,7 @@ body {
     justify-content: flex-end;
     position: sticky;
     top: 0;
-    left:0;
+    left: 0;
     right: 0;
     & input {
       height: 1rem;

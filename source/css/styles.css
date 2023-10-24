@@ -28,6 +28,23 @@ body#dark {
 .hide {
   display: none;
 }
+.button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: var(--background);
+  color: var(--color-a);
+  border: 1px solid var(--color-a);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  width: 40%;
+  &:hover {
+    background: var(--color-a);
+    color: var(--background);
+  }
+}
 main {
   background: var(--container-background);
   & a {

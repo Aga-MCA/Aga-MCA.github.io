@@ -1,5 +1,6 @@
 import { createElementDom } from '../modules/dom.js';
 import { Description } from './Description.js';
+import { Link } from './Link.js';
 
 /**
  * @param {[typeof import('../../../api/addons.json')['content'][2], boolean]} data
@@ -22,7 +23,16 @@ export function Content([item, show], users) {
     item.collaborators
       ?.map(c => users.find(u => u.id === c)?.name || '')
       .join(', ') || '';
-  const icon = versions.find(v => v.icon)?.icon || '/source/image/proximamente.png';
+  const icon =
+    versions.find(v => v.icon)?.icon || '/source/image/proximamente.png';
+  const images = (versions.find(v => v.images)?.images || []).map(img => {
+    const $img = createElementDom('img', {
+      src: img.url,
+      alt: img.description,
+      class: 'image',
+    });
+    return $img;
+  });
   const description =
     versions.find(v => v.description)?.description ||
     `Este es un recurso crreado por ${
@@ -58,10 +68,14 @@ export function Content([item, show], users) {
       )
     )
   );
+  const downloader = ()=>Link(versions[0].url, { class: 'button', target: '__blank' }, 'Descargar');
+  const datas =
+    images.length > 2 ? [downloader(), ...images, downloader()] : [downloader()];
   const $info = createElementDom(
     'div',
     { class: 'info' },
-    Description(description)
+    Description(description),
+    ...datas
   );
 
   return createElementDom('div', null, $header, $info);
