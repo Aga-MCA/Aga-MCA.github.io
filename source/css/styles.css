@@ -46,6 +46,7 @@ body#dark {
   }
 }
 .link {
+  border-left: 1px solid var(--container-background);
   display: flex;
   justify-content: center;
   text-align: center;
@@ -54,6 +55,8 @@ body#dark {
   padding: 0 1rem;
   height: 100%;
   align-items: center;
+  cursor: pointer;
+  text-decoration: none;
   &:hover {
     background: var(--color-a);
     color: var(--background);
