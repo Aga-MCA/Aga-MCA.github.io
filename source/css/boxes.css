@@ -101,9 +101,9 @@ body {
     padding: 0 1rem;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     align-content: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     position: sticky;
     top: 0;
     left: 0;

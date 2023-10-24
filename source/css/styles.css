@@ -45,6 +45,20 @@ body#dark {
     color: var(--background);
   }
 }
+.link {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: var(--background);
+  color: var(--color-a);
+  padding: 0 1rem;
+  height: 100%;
+  align-items: center;
+  &:hover {
+    background: var(--color-a);
+    color: var(--background);
+  }
+}
 main {
   background: var(--container-background);
   & a {
