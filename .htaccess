@@ -2,10 +2,14 @@ RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html !-f
-RewriteRule ^(content|addon|textura)$ /404.html
+RewriteRule ^(content|addon|textura)$ /
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html
 
-ErrorDocument 404 /404
+RewriteCond {REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME}.html !-f
+RewriteRule ^(.*)$ $1/index.html
+
+ErrorDocument 404 /
