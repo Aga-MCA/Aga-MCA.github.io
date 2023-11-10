@@ -161,7 +161,7 @@ export function Content([item, show], users) {
               createElementDom('li', null, change)
             )
           )
-        : 'No se registaron los cambios'
+        : 'No se registraron los cambios'
     );
     const $download = createElementDom(
       'section',
