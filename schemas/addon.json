@@ -14,6 +14,9 @@
             "type": "string",
             "enum": ["addon", "textura"]
           },
+          "icon": {
+            "type": "string"
+          },
           "versions": {
             "type": "array",
             "items": {
@@ -76,9 +79,6 @@
                     "required": ["description", "url"]
                   }
                 },
-                "icon": {
-                  "type": "string"
-                },
                 "url": {
                   "type": "string"
                 }
@@ -96,7 +96,7 @@
             }
           }
         },
-        "required": ["name", "type", "versions", "author"]
+        "required": ["name", "type", "versions", "author", "icon"]
       }
     }
   }

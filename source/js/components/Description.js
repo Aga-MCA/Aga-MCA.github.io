@@ -19,5 +19,5 @@ function descriptionProcess(description) {
 }
 
 export function Description(description) {
-  return createElementDom('p', null, ...descriptionProcess(description));
+  return createElementDom('p', {class:'content'}, ...descriptionProcess(description));
 }

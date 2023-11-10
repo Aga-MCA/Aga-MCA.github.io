@@ -1,7 +1,7 @@
 import { createElementDom } from '../modules/dom.js';
-import load from '../load/interface.js';
+import {reload} from '../load/interface.js';
 
-window.addEventListener('popstate', load);
+window.addEventListener('popstate', reload);
 
 export function navigate(url) {
   window.history.pushState({}, '', url);

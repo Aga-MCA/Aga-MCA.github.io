@@ -1,11 +1,2 @@
-@import url(./boxes.css);
+@import url(./minecraft.css);
 @import url(./styles.css);
-
-@import url(./index.mobile.css);
-@font-face {
-  font-family: Minecraft;
-  src: url(/source/fonts/Minecraft.otf);
-}
-body{
-  font-family: Minecraft, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}

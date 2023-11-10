@@ -1,0 +1,268 @@
+iframe#background {
+  position: absolute;
+  z-index: 1;
+  border: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+:root {
+  --bl: 6px;
+  --bd: var(--bl) solid;
+}
+
+.mc-selectable {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: calc(calc(100% / 3) - calc(var(--bl) * 2));
+  padding: 0;
+  border: 9px solid gray;
+  border-image-slice: 9;
+  border-image-repeat: inherit;
+  border-radius: 28px;
+  padding-bottom: 9px;
+
+  color: #dfdfdfff;
+  background-color: #8b8b8b;
+
+  &.active {
+    color: #4c4c4cff;
+    z-index: 4;
+    background-color: #c6c6c6;
+  }
+  &.left {
+    border-image-source: url(/source/image/ui/nav-left-unselected.png);
+    &.active {
+      border-image-source: url(/source/image/ui/nav-left-selected.png);
+    }
+    &:hover {
+      border-image-source: url(/source/image/ui/nav-left-hover.png);
+    }
+  }
+  &.center {
+    border-image-source: url(/source/image/ui/nav-center-unselected.png);
+    &.active {
+      border-image-source: url(/source/image/ui/nav-center-selected.png);
+    }
+    &:hover {
+      border-image-source: url(/source/image/ui/nav-center-hover.png);
+    }
+  }
+  &.right {
+    border-image-source: url(/source/image/ui/nav-right-unselected.png);
+    &.active {
+      border-image-source: url(/source/image/ui/nav-right-selected.png);
+    }
+    &:hover {
+      border-image-source: url(/source/image/ui/nav-right-hover.png);
+    }
+  }
+  &:hover {
+    color: white;
+    background-color: #1c7a03;
+  }
+}
+.mc-textarea {
+  color: white;
+  font-weight: normal;
+  font-size: 0.83em;
+  padding: calc(0.83em / 2);
+  background-color: #5e5e5eff;
+  border: 6px solid gray;
+  border-image-source: url(/source/image/ui/textarea.png);
+  border-image-slice: 6;
+  border-image-repeat: inherit;
+  &:hover {
+    border-image-source: url(/source/image/ui/textarea-hover.png);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.mc-list {
+  padding: 6px;
+  background-color: #000c;
+  border: 28px solid gray;
+  border-image-source: url(/source/image/ui/list.png);
+  border-image-slice: 28;
+  border-image-repeat: inherit;
+  border-radius: 28px;
+  > .mc-list-item {
+    background-color: #3a3a3a;
+    border: 6px solid gray;
+    border-image-source: url(/source/image/ui/list-item.png);
+    border-image-slice: 6;
+    border-image-repeat: inherit;
+    width: calc(100% - 9px);
+    color: #b2b2b2;
+    & .mc-list-item-name {
+      color: white;
+    }
+    &:hover {
+      background-color: #004d04;
+      border-image-source: url(/source/image/ui/list-item-hover.png);
+      & .mc-list-item-image {
+        background-color: #007305ff;
+        border-image-source: url(/source/image/ui/list-item-image-hover.png);
+      }
+    }
+  }
+}
+& .mc-image {
+  background-color: #605652ff;
+  border: 3px solid gray;
+  border-image-source: url(/source/image/ui/list-item-image.png);
+  border-image-slice: 3;
+  border-image-repeat: inherit;
+  margin: 3px;
+}
+.mc-button {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #c6c6c6ff;
+  color: #4c4c4cff;
+  border: 6px solid gray;
+  border-image-source: url(/source/image/ui/button-unpress.png);
+  border-image-slice: 6;
+  border-image-repeat: inherit;
+  &:hover {
+    color: #fff;
+    background-color: #218306ff;
+    border-image-source: url(/source/image/ui/button-unpress-hover.png);
+  }
+  &.active {
+    color: #1f1f1f;
+    background-color: #8b8b8bff;
+    border-image-source: url(/source/image/ui/button-press.png);
+    &:hover {
+      color: #fff;
+      background-color: #218306ff;
+      border-image-source: url(/source/image/ui/button-press-hover.png);
+    }
+  }
+}
+.mc-header {
+  color: #4c4c4cff;
+  font-size: 1.5rem;
+  width: 100%;
+  background-color: #c6c6c6ff;
+  padding: 0.69rem;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  > .mc-button {
+    background-color: #0000;
+    color: #4c4c4cff;
+    text-decoration: none;
+    display: flex;
+    width: 2rem;
+    border: 5rem;
+    justify-content: center;
+    &:hover {
+      background-color: #0003;
+    }
+  }
+  > p {
+    margin-left: 1rem;
+  }
+}
+.mc-data {
+  padding: 1rem;
+  position: relative;
+  margin-top: 6px;
+  background-color: #313233;
+  border: 3px solid #000;
+  border-left: 0;
+  border-bottom: 0;
+  width: calc(40% - 33px);
+  height: 100%;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  > img {
+    background-color: #6b6b6b;
+    width: calc(40vw - 3rem + 1px);
+    height: calc(40vw - 3rem + 1px);
+    border: 3px solid #000;
+  }
+  > section {
+    color: white;
+    margin-bottom: 1rem;
+    > .title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+.mc-info {
+  padding: 1rem;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  margin-top: 6px;
+  background-color: #313233;
+  border: 3px solid #000;
+  border-right: 0;
+  border-bottom: 0;
+  width: calc(60% - 2rem - 6px - 6px);
+  height: 100%;
+  &.hide {
+    display: none;
+  }
+  > section {
+    color: white;
+    margin-bottom: 1rem;
+    > .title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    > .content {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      & a {
+        color: white;
+        &:hover {
+          color: #d6d6d6;
+        }
+      }
+    }
+    > .image {
+      height: 10rem;
+    }
+  }
+}
+
+@font-face {
+  font-family: Minecraft;
+  src: url(/source/fonts/Minecraft.otf);
+}
+* {
+  margin: 0;
+  font-weight: normal;
+  font-family: Minecraft, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #393939;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c6c6c6;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #6b6b6b;
+}

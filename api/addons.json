@@ -5,11 +5,11 @@
       "name": "Home",
       "type": "addon",
       "author": 0,
+      "icon": "/source/image/addon/Home/icon.png",
       "versions": [
         {
           "version": "1.0.0",
           "date": "2022-08-05T00:22:33",
-          "icon": "/source/image/addon/Home/icon.png",
           "tags": ["comando", "script"],
           "changes": ["Se ha creado el comando \\home"],
           "description": "Agrega el comando \\home con los argumentos set, go, remove y list cada uno con sus debidas funciones el texto que se ponga a continuacion de los siguientes comandos se utilizaran como nombre del home ejemplos:\n\n \\home set casa\n \\home go casa\n \\home remove casa\n \\home list",
@@ -27,11 +27,11 @@
       "name": "Waila",
       "author": 0,
       "type": "addon",
+      "icon": "/source/image/addon/Waila/icon.png",
       "versions": [
         {
           "version": "1.0.0",
           "date": "2022-10-06T01:44:38",
-          "icon": "/source/image/addon/Waila/icon.png",
           "images": [
             {
               "url": "/source/image/addon/Waila/config.png",
@@ -68,11 +68,11 @@
       "type": "addon",
       "author": 0,
       "collaborators": [1],
+      "icon": "/source/image/addon/Iron-Chest/icon.png",
       "versions": [
         {
           "version": "1.0.0",
           "date": "2022-07-22T13:57:48",
-          "icon": "/source/image/addon/Iron-Chest/icon.png",
           "tags": ["cofre"],
           "changes": [
             "Se ha creado el cofre de hierro",
@@ -101,11 +101,11 @@
       "name": "Chisel",
       "type": "addon",
       "author": 0,
+      "icon": "/source/image/addon/Chisel/icon.png",
       "versions": [
         {
           "version": "1.0.0",
           "date": "2021-10-05T14:22:47",
-          "icon": "/source/image/addon/Chisel/icon.png",
           "tags": ["cincel", "bloque"],
           "description": "Es un addon similar al mod de java agregando crafteos y funcionalidades parecidas",
           "images": [
@@ -162,12 +162,12 @@
       "name": "Home Jun",
       "type": "addon",
       "author": 0,
+      "icon": "/source/image/addon/Home-Jun/icon.png",
       "versions": [
         {
           "version": "1.0.0",
           "date": "2022-07-21T01:36:29",
           "description": "Este es un addon para guardar tu home con comandos",
-          "icon": "/source/image/addon/Home-Jun/icon.png",
           "tags": ["comando", "script", "JunSP13"],
           "changes": ["Se ha creado el comando \\home"],
           "url": "https://www.mediafire.com/file/0hnrnbcqpk3gdpz/Home_seo.mcaddon/file"
@@ -179,6 +179,7 @@
       "name": "Escudo secundario",
       "type": "textura",
       "author": 0,
+      "icon": "/source/image/textura/Escudo-secundario/icon.png",
       "versions": [
         {
           "version": "1.0.0",
@@ -190,7 +191,6 @@
               "description": "Comparacion"
             }
           ],
-          "icon": "/source/image/textura/Escudo-secundario/icon.png",
           "tags": ["arreglos", "animacion"],
           "changes": [],
           "url": "https://www.mediafire.com/file/ap37rj07w05lxew/Escudo_secundario.mcpack/file"
@@ -202,6 +202,7 @@
       "name": "Fundas de equipamiento",
       "type": "addon",
       "author": 0,
+      "icon": "/source/image/addon/Fundas-de-equipamiento/icon.png",
       "versions": [
         {
           "version": "1.0.0",
@@ -294,7 +295,6 @@
             }
           ],
           "tags": ["colores"],
-          "icon": "/source/image/addon/Fundas-de-equipamiento/icon.png",
           "changes": [],
           "url": "https://www.mediafire.com/file/wv8p3259uxkt7ry/Fundas-de-equipamento.mcaddon/file"
         }
@@ -304,6 +304,7 @@
       "name": "ChoesinCraft",
       "type": "addon",
       "author": 0,
+      "icon": "/source/image/addon/ChoesinCraft/icon.png",
       "versions": [
         {
           "version": "1.0.0",
@@ -311,7 +312,6 @@
           "changes": [],
           "description": "Este fue creado para un servidor antiguo",
           "tags": ["mesa", "bloque", "herramientas", "entidad", "mineral", "projectil", "JunSP13", "servidor"],
-          "icon": "/source/image/addon/ChoesinCraft/icon.png",
           "url": "https://www.mediafire.com/file/du063qv9gtiosxo/ChoesinCraft.mcaddon/file"
         }
       ],
@@ -321,6 +321,7 @@
       "name": "Variantes de madera",
       "type": "addon",
       "author": 0,
+      "icon": "/source/image/addon/Variantes-de-madera/icon.png",
       "versions": [
         {
           "version": "1.0.0",
@@ -354,8 +355,7 @@
           ],
           "tags": ["mesa", "cofre", "bloque", "herramientas"],
           "description": "Agrega variaciones de bloques e items de cada tipo de madera los cuales para craftear se nesita una mesa especial (mesa de tallado) a continuacion los crafteos de los objetos",
-          "url": "https://www.mediafire.com/file/33w1ylafln149fh/Variantes_de_maderas.mcaddon/file",
-          "icon": "/source/image/addon/Variantes-de-madera/icon.png"
+          "url": "https://www.mediafire.com/file/33w1ylafln149fh/Variantes_de_maderas.mcaddon/file"
         }
       ]
     }
