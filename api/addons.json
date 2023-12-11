@@ -11,14 +11,14 @@
           "version": "1.0.0",
           "date": "2022-08-05T00:22:33",
           "tags": ["comando", "script"],
-          "changes": ["Se ha creado el comando \\home"],
-          "description": "Agrega el comando \\home con los argumentos set, go, remove y list cada uno con sus debidas funciones el texto que se ponga a continuacion de los siguientes comandos se utilizaran como nombre del home ejemplos:\n\n \\home set casa\n \\home go casa\n \\home remove casa\n \\home list",
+          "changes": ["addon.Home.versions.1-0-0.changes.0"],
+          "description": "addon.Home.versions.1-0-0.description",
           "url": "https://www.mediafire.com/file/85ty3n447vcr163/Home.mcaddon/file"
         },
         {
           "version": "2.0.0",
           "date": "2023-03-04T19:12:42",
-          "changes": ["Se actualizo a la api mas reciente de Minecraft"],
+          "changes": ["addon.Home.versions.2-0-0.changes.0"],
           "url": "https://www.mediafire.com/file/umhdtj9voxhzy2c/Homes_v2.0.0.mcaddon/file"
         }
       ]
@@ -35,12 +35,12 @@
           "images": [
             {
               "url": "/source/image/addon/Waila/config.png",
-              "description": "Crafteo del configurador"
+              "description": "addon.Waila.versions.1-0-0.images.0.description"
             }
           ],
           "tags": ["script"],
-          "changes": ["Se ha creado la funcion de el Waila"],
-          "description": "Te muestra lo que estas viendo ya sea una entidad o un bloque sea vanilla o de otro addon ademas de ser configurable con el Waila config",
+          "changes": ["addon.Waila.versions.1-0-0.changes.0"],
+          "description": "addon.Waila.versions.1-0-0.description",
           "url": "https://www.mediafire.com/file/s3c7q2cpa67w5ht/Waila.mcaddon/file"
         },
         {
@@ -59,7 +59,7 @@
           "version": "3.0.0",
           "date": "2023-02-16T15:50:27",
           "url": "https://www.mediafire.com/file/kodxdkz3t3i65rt/Waila-3.0.0.mcaddon/file",
-          "changes": ["Se actualizo a la api de Minecraft 1.19.60"]
+          "changes": ["addon.Waila.versions.3-0-0.changes.0"]
         }
       ]
     },
@@ -75,23 +75,23 @@
           "date": "2022-07-22T13:57:48",
           "tags": ["cofre"],
           "changes": [
-            "Se ha creado el cofre de hierro",
-            "Se ha creado el cofre de oro",
-            "Se ha creado el cofre de diamante",
-            "Se ha creado el cofre de cobre",
-            "Se ha creado el cofre de cristal"
+            "addon.Iron-Chest.versions.1-0-0.changes.0",
+            "addon.Iron-Chest.versions.1-0-0.changes.1",
+            "addon.Iron-Chest.versions.1-0-0.changes.2",
+            "addon.Iron-Chest.versions.1-0-0.changes.3",
+            "addon.Iron-Chest.versions.1-0-0.changes.4"
           ],
-          "description": "Agrega cofres de Hierro, Oro, Diamante, Cobre y Cristal",
+          "description": "addon.Iron-Chest.versions.1-0-0.description",
           "url": "https://www.mediafire.com/file/fcq4md6t1n8n0lj/Iron-Chest.mcaddon/file"
         },
         {
           "version": "1.0.1",
           "date": "2022-11-22T22:23:55",
           "changes": [
-            "Se agrego el cofre de netherite",
-            "Se corrigio la textura del cofre de cobre",
-            "Se arreglaron los crafteos de el cofre de oro",
-            "Se agregaron las texturas originales de el Iron-Chest"
+            "addon.Iron-Chest.versions.1-0-1.changes.0",
+            "addon.Iron-Chest.versions.1-0-1.changes.1",
+            "addon.Iron-Chest.versions.1-0-1.changes.2",
+            "addon.Iron-Chest.versions.1-0-1.changes.3"
           ],
           "url": "https://www.mediafire.com/file/octjzqg8u1zfoi5/Iron-Chest-v1.0.1.mcaddon/file"
         }
@@ -107,19 +107,19 @@
           "version": "1.0.0",
           "date": "2021-10-05T14:22:47",
           "tags": ["cincel", "bloque"],
-          "description": "Es un addon similar al mod de java agregando crafteos y funcionalidades parecidas",
+          "description": "addon.Chisel.versions.1-0-0.description",
           "images": [
             {
               "url": "/source/image/addon/Chisel/Chisel.png",
-              "description": "Crafteo del Chisel"
+              "description": "addon.Chisel.versions.1-0-0.images.0.description"
             },
             {
               "url": "/source/image/addon/Chisel/lavastone.png",
-              "description": "Crafteo de la piedra de lava"
+              "description": "addon.Chisel.versions.1-0-0.images.1.description"
             },
             {
               "url": "/source/image/addon/Chisel/offsettool.png",
-              "description": "Crafteo de la herramienta de offset"
+              "description": "addon.Chisel.versions.1-0-0.images.2.description"
             }
           ],
           "changes": [],
@@ -135,9 +135,9 @@
           "version": "1.0.2",
           "date": "2022-10-25T02:02:19",
           "changes": [
-            "Se agregaron los bloques de bambú",
-            "Se agrego 7 bloques de oro",
-            "Se agrego 8 bloques de Hierro"
+            "addon.Chisel.versions.1-0-2.changes.0",
+            "addon.Chisel.versions.1-0-2.changes.1",
+            "addon.Chisel.versions.1-0-2.changes.2"
           ],
           "url": "https://www.mediafire.com/file/aa9lvf2vmam6rww/Aga-Chisel-v1.0.2.mcaddon/file"
         }
@@ -152,7 +152,7 @@
           "version": "1.0.0",
           "date": "2022-09-19T23:11:30",
           "changes": [],
-          "description": "Una textura que agrega animaciones mas realistas al juego",
+          "description": "addon.Animaciones.versions.1-0-0.description",
           "tags": ["animacion"],
           "url": "https://www.mediafire.com/file/3e3d7qr8dbcjr3f/animations.mcpack/file"
         }
@@ -167,9 +167,9 @@
         {
           "version": "1.0.0",
           "date": "2022-07-21T01:36:29",
-          "description": "Este es un addon para guardar tu home con comandos",
+          "description": "addon.Home-Jun.versions.1-0-0.description",
           "tags": ["comando", "script", "JunSP13"],
-          "changes": ["Se ha creado el comando \\home"],
+          "changes": ["addon.Home-Jun.versions.1-0-0.changes.0"],
           "url": "https://www.mediafire.com/file/0hnrnbcqpk3gdpz/Home_seo.mcaddon/file"
         }
       ],
@@ -184,11 +184,11 @@
         {
           "version": "1.0.0",
           "date": "2021-06-10T19:36:27",
-          "description": "Es una textura que lo que hace es voltear el escudo de manera que no quede la imagen de cabeza como en el Minecraft vanilla aqui un ejemplo:",
+          "description": "addon.Escudo-secundario.versions.1-0-0.description",
           "images": [
             {
               "url": "/source/image/textura/Escudo-secundario/comparacion.png",
-              "description": "Comparacion"
+              "description": "addon.Escudo-secundario.versions.1-0-0.images.0.description"
             }
           ],
           "tags": ["arreglos", "animacion"],
@@ -197,108 +197,6 @@
         }
       ],
       "deprecated": true
-    },
-    {
-      "name": "Fundas de equipamiento",
-      "type": "addon",
-      "author": 0,
-      "icon": "/source/image/addon/Fundas-de-equipamiento/icon.png",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "date": "2022-04-27T02:17:29",
-          "description": "Es un addon que cambia los diseños (no los modelos 3D) de escudo, elytas y los tridentes (estos no cambian mucho)\n\n Se recomienda usar la textura #Escudo secundario*/content/Escudo-secundario# para que no se volteen los diseños",
-          "images": [
-            {
-              "description": "Diseño Aga",
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_aga.png"
-            },
-            {
-              "description": "Diseño Negro",
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_black.png"
-            },
-            {
-              "description": "Diseño Azul",
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_blue.png"
-            },
-            {
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_brown.png",
-              "description": "Diseño Cafe"
-            },
-            {
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_cyan.png",
-              "description": "Diseño Cian"
-            },
-            {
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_gag.png",
-              "description": "Diseño GaG"
-            },
-            {
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_gray.png",
-              "description": "Diseño Gris"
-            },
-            {
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_green.png",
-              "description": "Diseño Verde"
-            },
-            {
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_koopa.png",
-              "description": "Diseño Koopa"
-            },
-            {
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_light_blue.png",
-              "description": "Diseño Azul claro"
-            },
-            {
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_lime.png",
-              "description": "Diseño Lima"
-            },
-            {
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_magenta.png",
-              "description": "Diseño Magenta"
-            },
-            {
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_orange.png",
-              "description": "Diseño Naranja"
-            },
-            {
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_pink.png",
-              "description": "Diseño Rosa"
-            },
-            {
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_purple.png",
-              "description": "Diseño Morado"
-            },
-            {
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_red.png",
-              "description": "Diseño Rojo"
-            },
-            {
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_seo.png",
-              "description": "Diseño Seo"
-            },
-            {
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_silver.png",
-              "description": "Diseño Plata"
-            },
-            {
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_stk.png",
-              "description": "Diseño StK"
-            },
-            {
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_white.png",
-              "description": "Diseño Blanco"
-            },
-            {
-              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_yellow.png",
-              "description": "Diseño Amarillo"
-            }
-          ],
-          "tags": ["colores"],
-          "changes": [],
-          "url": "https://www.mediafire.com/file/wv8p3259uxkt7ry/Fundas-de-equipamento.mcaddon/file"
-        }
-      ]
     },
     {
       "name": "ChoesinCraft",
@@ -310,7 +208,7 @@
           "version": "1.0.0",
           "date": "2021-04-25T20:28:00",
           "changes": [],
-          "description": "Este fue creado para un servidor antiguo",
+          "description": "addon.ChoesinCraft.versions.1-0-0.description",
           "tags": ["mesa", "bloque", "herramientas", "entidad", "mineral", "projectil", "JunSP13", "servidor"],
           "url": "https://www.mediafire.com/file/du063qv9gtiosxo/ChoesinCraft.mcaddon/file"
         }
@@ -327,35 +225,137 @@
           "version": "1.0.0",
           "date": "2021-04-22T20:05:53",
           "changes": [],
+          "description": "addon.Variantes-de-madera.versions.1-0-0.description",
           "images": [
             {
               "url": "/source/image/addon/Variantes-de-madera/mesa-de-tallado.gif",
-              "description": "Crafteo de la mesa de tallado"
+              "description": "addon.Variantes-de-madera.versions.1-0-0.images.0.description"
             },
             {
               "url": "/source/image/addon/Variantes-de-madera/Palos.gif",
-              "description": "Crafteo de los palos de madera"
+              "description": "addon.Variantes-de-madera.versions.1-0-0.images.1.description"
             },
             {
               "url": "/source/image/addon/Variantes-de-madera/soporte-de-armadura.gif",
-              "description": "Crafteo del soporte de armadura"
+              "description": "addon.Variantes-de-madera.versions.1-0-0.images.2.description"
             },
             {
               "url": "/source/image/addon/Variantes-de-madera/mesa-de-crafteo.png",
-              "description": "Crafteo de la mesa de crafteo"
+              "description": "addon.Variantes-de-madera.versions.1-0-0.images.3.description"
             },
             {
               "url": "/source/image/addon/Variantes-de-madera/Cofres.png",
-              "description": "Crafteo de los cofres"
+              "description": "addon.Variantes-de-madera.versions.1-0-0.images.4.description"
             },
             {
               "url": "/source/image/addon/Variantes-de-madera/Librerias.png",
-              "description": "Crafteo de las librerias"
+              "description": "addon.Variantes-de-madera.versions.1-0-0.images.5.description"
             }
           ],
           "tags": ["mesa", "cofre", "bloque", "herramientas"],
-          "description": "Agrega variaciones de bloques e items de cada tipo de madera los cuales para craftear se nesita una mesa especial (mesa de tallado) a continuacion los crafteos de los objetos",
           "url": "https://www.mediafire.com/file/33w1ylafln149fh/Variantes_de_maderas.mcaddon/file"
+        }
+      ]
+    },
+    {
+      "name": "Fundas de equipamiento",
+      "type": "addon",
+      "author": 0,
+      "icon": "/source/image/addon/Fundas-de-equipamiento/icon.png",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2022-04-27T02:17:29",
+          "description": "addon.Fundas-de-equipamiento.versions.1-0-0.description",
+          "images": [
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_aga.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.0.description"
+            },
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_gag.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.1.description"
+            },
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_koopa.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.2.description"
+            },
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_stk.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.3.description"
+            },
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_seo.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.4.description"
+            },
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_black.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.5.description"
+            },
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_blue.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.6.description"
+            },
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_brown.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.7.description"
+            },
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_cyan.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.8.description"
+            },
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_gray.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.9.description"
+            },
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_green.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.10.description"
+            },
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_light_blue.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.11.description"
+            },
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_lime.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.12.description"
+            },
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_magenta.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.13.description"
+            },
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_orange.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.14.description"
+            },
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_pink.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.15.description"
+            },
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_purple.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.16.description"
+            },
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_red.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.17.description"
+            },
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_silver.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.18.description"
+            },
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_white.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.19.description"
+            },
+            {
+              "url": "/source/image/addon/Fundas-de-equipamiento/elytra_yellow.png",
+              "description": "addon.Fundas-de-equipamiento.versions.1-0-0.images.20.description"
+            }
+          ],
+          "tags": ["colores"],
+          "changes": [],
+          "url": "https://www.mediafire.com/file/wv8p3259uxkt7ry/Fundas-de-equipamento.mcaddon/file"
         }
       ]
     }

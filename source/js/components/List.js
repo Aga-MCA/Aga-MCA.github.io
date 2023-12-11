@@ -14,6 +14,7 @@ function searchProp(item, prop) {
  */
 export function List(data, users) {
   const $list = createElementDom('div', { class: 'mc-list', id: 'list' });
+  // no blocking
   (async () => {
     let inter;
     const $search = createElementDom('input', {
@@ -49,7 +50,7 @@ export function List(data, users) {
         if (a1[2] < b1[2]) return 1;
         return 0;
       });
-      const author = users.find(u => u.id === item.author)?.name || 'Anonimo';
+      const author = users.find(u => u.id === item.author)?.name || list.get('user.unknown');
       const collaborators =
         item.collaborators
           ?.map(c => users.find(u => u.id === c)?.name || '')

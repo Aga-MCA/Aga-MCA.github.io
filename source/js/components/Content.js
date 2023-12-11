@@ -81,7 +81,7 @@ export function Content([item, show], users) {
     if (i !== 0) versionsInv[i] = { ...versionsInv[i - 1], ...versionsInv[i] };
     versions.unshift(versionsInv[i]);
   }
-  const author = users.find(u => u.id === item.author)?.name || 'Anonimo';
+  const author = users.find(u => u.id === item.author)?.name || lang.get('user.unknown');
   const collaborators =
     item.collaborators
       ?.map(c => users.find(u => u.id === c)?.name || '')
@@ -92,7 +92,7 @@ export function Content([item, show], users) {
     'div',
     { class: 'mc-header' },
     Link('/', { class: 'mc-button' }, '<'),
-    createElementDom('p', null, `Ver "${item.name}"`)
+    createElementDom('p', null, lang.use('gui.watch', item))
   );
   const $data = createElementDom(
     'div',
@@ -101,7 +101,7 @@ export function Content([item, show], users) {
     createElementDom(
       'section',
       null,
-      createElementDom('p', { class: 'title' }, 'Versiones'),
+      createElementDom('p', { class: 'title' }, lang.get('gui.title.versions')),
       ...versions.map(v =>
         Link(
           `/content/${item.name.replaceAll(' ', '-')}/${v.version}`,
@@ -112,13 +112,13 @@ export function Content([item, show], users) {
     createElementDom(
       'section',
       null,
-      createElementDom('p', { class: 'title' }, 'Autor'),
+      createElementDom('p', { class: 'title' }, lang.get('gui.title.author')),
       createElementDom('p', null, author)
     ),
     collaborators && createElementDom(
       'section',
       null,
-      createElementDom('p', { class: 'title' }, 'Colaboradores'),
+      createElementDom('p', { class: 'title' }, lang.get('gui.title.collaborators')),
       createElementDom('p', null, collaborators)
     ),
   );
@@ -128,11 +128,11 @@ export function Content([item, show], users) {
     const $images = (version.images || [])+'' && createElementDom(
       'section',
       null,
-      createElementDom('p', { class: 'title' }, 'Imagenes'),
+      createElementDom('p', { class: 'title' }, lang.get('gui.title.images')),
       ...(version.images || []).map(img => {
         const $img = createElementDom('img', {
           src: img.url,
-          alt: img.description,
+          title: lang.get(img.description),
           class: 'image',
         });
         return $img;
@@ -141,32 +141,32 @@ export function Content([item, show], users) {
     const $description = createElementDom(
       'section',
       null,
-      createElementDom('p', { class: 'title' }, 'Descripcion'),
+      createElementDom('p', { class: 'title' }, lang.get('gui.title.description')),
       Description(
-        version.description ||
-          `Este es un recurso crreado por ${
-            collaborators ? `${author}, ${collaborators}` : author
-          }`
+        lang.get(version.description) ||
+          lang.use('gui.unknown.description', {
+            makers: (collaborators ? lang.use('util.and',[collaborators,author]) : author)
+          })
       )
     );
     const $changes = createElementDom(
       'section',
       null,
-      createElementDom('p', { class: 'title' }, 'Cambios'),
+      createElementDom('p', { class: 'title' }, lang.get('gui.title.changes')),
       version.changes && version.changes.length
         ? createElementDom(
             'ul',
             null,
             ...version.changes.map(change =>
-              createElementDom('li', null, change)
+              createElementDom('li', null, lang.get(change))
             )
           )
-        : 'No se registraron los cambios'
+        : lang.get("gui.unknown.changes")
     );
     const $download = createElementDom(
       'section',
       null,
-      createElementDom('p', { class: 'title' }, 'Descargar'),
+      createElementDom('p', { class: 'title' }, lang.get('gui.title.download')),
       createElementDom(
         'a',
         {
@@ -175,7 +175,7 @@ export function Content([item, show], users) {
           target: '_blank',
           rel: 'noopener noreferrer',
         },
-        'Descargar'
+        lang.use('gui.button.install', version)
       )
     );
     return createElementDom(

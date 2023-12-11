@@ -187,10 +187,12 @@ iframe#background {
   overflow-x: hidden;
   scroll-behavior: smooth;
   > img {
+    --size-img: calc(40vw - 3rem + 1px);
     background-color: #6b6b6b;
-    width: calc(40vw - 3rem + 1px);
-    height: calc(40vw - 3rem + 1px);
+    width: var(--size-img);
+    height: calc(var(--size-img) / 2);
     border: 3px solid #000;
+    object-fit: cover;
   }
   > section {
     color: white;

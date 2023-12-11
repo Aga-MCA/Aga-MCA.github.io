@@ -1,4 +1,5 @@
 import api from './api.js';
+
 export default async function load() {
   const $root = document.getElementById('root');
   const { App } = await import('../components/App.js');
