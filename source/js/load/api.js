@@ -12,6 +12,7 @@ import users from '../../../api/users.json' assert { type: 'json' };
  * }} query
  */
 export default function loadApi(query) {
+  query.type === 'all' && delete query.type;
   /** @type {[typeof addons['content'][2], boolean][]} */
   const data = [];
   for (const addon of addons.content) {

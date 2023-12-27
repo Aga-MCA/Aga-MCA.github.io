@@ -16,6 +16,9 @@
   "gui.nav.all": "All",
   "gui.nav.addons": "Addons",
   "gui.nav.textures": "Textures",
+  
+  "home.start": "Start",
+  "home.config": "Configurations",
 
   "addon.Home.versions.1-0-0.changes.0": "Created the \\home command",
   "addon.Home.versions.1-0-0.description": "Adds the \\home command with arguments set, go, remove, and list, each with their respective functions. The text placed after the following commands will be used as the home name. Examples:\n\n \\home set house\n \\home go house\n \\home remove house\n \\home list",

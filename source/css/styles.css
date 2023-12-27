@@ -1,3 +1,6 @@
+.hide {
+  display: none;
+}
 body {
   margin: 0;
   height: 100vh;
@@ -13,7 +16,7 @@ body {
     > nav {
       z-index: 3;
       display: flex;
-      height: 3rem;
+      height: 4.5rem;
       > a {
         text-decoration: none;
       }
@@ -21,7 +24,7 @@ body {
     > div#list {
       top: -9px;
       display: flex;
-      height: calc(calc(100% - var(--bl)) - 5rem);
+      height: calc(calc(100% - var(--bl)) - 6.5rem);
       text-align: center;
       overflow-y: scroll;
       overflow-x: hidden;
@@ -69,6 +72,26 @@ body {
       }
     }
   }
+  > div#start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    > a {
+      width: 30%;
+      margin: 3px;
+      height: calc(100% / 12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &.hide {
+      display: none;
+    }
+  }
   > div#content {
     height: 100%;
     width: 100%;
@@ -91,33 +114,11 @@ body {
       justify-content: space-between;
     }
     &.hide {
-      display: none;
       animation-name: fadeOutContainer;
     }
   }
 }
-@keyframes fadeOutItem {
-  from {
-    filter: opacity(1);
-    transform: translate(0, 0);
-    display: flex;
-  }
-  to {
-    filter: opacity(0);
-    transform: translate(0, -100%);
-    opacity: 0;
-  }
-}
-@keyframes fadeInItem {
-  from {
-    filter: opacity(0);
-    transform: translate(0, -100%);
-  }
-  to {
-    filter: opacity(1);
-    transform: translate(0, 0);
-  }
-}
+
 @keyframes fadeOutContainer {
   from {
     transform: translate(0, 0);

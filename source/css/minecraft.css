@@ -11,12 +11,16 @@ iframe#background {
   --bl: 6px;
   --bd: var(--bl) solid;
 }
-
+.mc-nav-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0.5rem;
+}
 .mc-selectable {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  width: calc(calc(100% / 3) - calc(var(--bl) * 2));
+  justify-content: flex-start;
+  width: calc(30% - calc(var(--bl) * 2));
   padding: 0;
   border: 9px solid gray;
   border-image-slice: 9;
@@ -62,6 +66,35 @@ iframe#background {
   &:hover {
     color: white;
     background-color: #1c7a03;
+  }
+  &.exit {
+    background-color: #3a3a3a;
+    width: calc(10% - calc(var(--bl) * 2));
+    border-image-source: url(/source/image/ui/nav-exit.png);
+    margin-bottom: 9px;
+    & .mc-nav-data {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & p {
+        color: white;
+        color: white;
+        height: 2rem;
+        width: 2rem;
+        text-align: center;
+        &:hover {
+          background-color: #fff7;
+        }
+      }
+    }
+  }
+  & .mc-nav-data span {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    background-color: #0007;
+    color: white;
   }
 }
 .mc-textarea {

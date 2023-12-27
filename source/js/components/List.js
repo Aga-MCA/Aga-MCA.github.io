@@ -32,6 +32,7 @@ export function List(data, users) {
         let pre = '/'
         if(location.pathname.startsWith('/addon')) pre = '/addon/';
         if(location.pathname.startsWith('/textura')) pre = '/textura/';
+        if(location.pathname.startsWith('/all')) pre = '/all/';
         const value = $search.value.replaceAll(' ', '-').trim();
         if(value === '') return navigate(pre);
         navigate(`${pre}/search/${value}`.replace(/\/+/g, '/'));
@@ -39,6 +40,11 @@ export function List(data, users) {
     });
     $list.appendChild($search);
     for (const [item, show] of data) {
+      const all = document.querySelector('#nav-all span');
+      const type = document.querySelector(`#nav-${item.type} span`);
+      all.textContent = Number(all.textContent) + 1;
+      type.textContent = Number(type.textContent) + 1;
+
       const versions = item.versions.sort((a, b) => {
         const a1 = a.version.split('.').map(Number);
         const b1 = b.version.split('.').map(Number);

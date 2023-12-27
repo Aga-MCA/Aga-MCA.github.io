@@ -1,8 +1,8 @@
 {
   "user.unknown": "\"Desconocido\"",
-  "gui.watch": "Ver \"{name}\"",
+  "gui.watch": " \"{name}\"",
   "gui.title.versions": "Versiones",
-  "gui.title.author": "Autor",
+  "gui.title.author": "",
   "gui.title.collaborators": "Colaboradores",
   "gui.title.images": "Imágenes",
   "gui.title.description": "Descripción",
@@ -16,9 +16,6 @@
   "gui.nav.all": "Todo",
   "gui.nav.addons": "Addons",
   "gui.nav.textures": "Texturas",
-
-  "home.start": "Inicio",
-  "home.config": "Configuraciones",
 
   "addon.Home.versions.1-0-0.changes.0": "Se ha creado el comando \\home",
   "addon.Home.versions.1-0-0.description": "Agrega el comando \\home con los argumentos set, go, remove y list cada uno con sus debidas funciones el texto que se ponga a continuacion de los siguientes comandos se utilizaran como nombre del home ejemplos:\n\n \\home set casa\n \\home go casa\n \\home remove casa\n \\home list",
