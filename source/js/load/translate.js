@@ -20,7 +20,7 @@ async function loadLang(lang, father = null) {
   const data = await fetch(`../../../lang/${lang}.json`).then(r=>r.json()).catch(e=>e);
   if(data['$refs']){
     for(const ref of (data['$refs']))
-      await fetch(ref,{mode:'no-cors'}).then(r=>r.json()).then(r=>Object.assign(data,r)).catch(e=>e);
+      await fetch(ref).then(r=>r.json()).then(r=>Object.assign(data,r)).catch(e=>e);
     delete data['$refs'];
   }
   if(data instanceof Error) return father ?? new Lang({}, lang, father);

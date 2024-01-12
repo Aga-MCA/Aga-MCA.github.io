@@ -172,9 +172,7 @@ export function Content([item, show], users) {
       lang.use('gui.button.install', version)
     )
     $link.addEventListener('click', async () => {
-      fetch($link.getAttribute('href'), {
-        "mode":"no-cors"
-      }).then(r => r.blob()).then(blob => {
+      fetch($link.getAttribute('href')).then(r => r.blob()).then(blob => {
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
