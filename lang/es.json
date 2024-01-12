@@ -59,14 +59,6 @@
 
   "addon.ChoesinCraft.versions.1-0-0.description": "Este fue creado para un servidor antiguo",
 
-  "addon.Variantes-de-madera.versions.1-0-0.description": "Agrega variaciones de bloques e items de cada tipo de madera los cuales para craftear se nesita una mesa especial (mesa de tallado) a continuacion los crafteos de los objetos",
-  "addon.Variantes-de-madera.versions.1-0-0.images.0.description": "Crafteo de la mesa de tallado",
-  "addon.Variantes-de-madera.versions.1-0-0.images.1.description": "Crafteo de los palos de madera",
-  "addon.Variantes-de-madera.versions.1-0-0.images.2.description": "Crafteo del soporte de armadura",
-  "addon.Variantes-de-madera.versions.1-0-0.images.3.description": "Crafteo de la mesa de crafteo",
-  "addon.Variantes-de-madera.versions.1-0-0.images.4.description": "Crafteo de los cofres",
-  "addon.Variantes-de-madera.versions.1-0-0.images.5.description": "Crafteo de las librerias",
-
   "addon.Fundas-de-equipamiento.versions.1-0-0.description": "Es un addon que cambia los diseños (no los modelos 3D) de escudo, elytas y los tridentes (estos no cambian mucho)\n\n Se recomienda usar la textura #Escudo secundario*/content/Escudo-secundario# para que no se volteen los diseños",
   "addon.Fundas-de-equipamiento.versions.1-0-0.images.0.description": "Diseño Aga",
   "addon.Fundas-de-equipamiento.versions.1-0-0.images.1.description": "Diseño GaG",

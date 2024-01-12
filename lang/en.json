@@ -1,4 +1,5 @@
 {
+  "$refs": ["https://raw.githubusercontent.com/Aga-MCA/WoodVariants-Source/main/lang/en.json"],
   "user.unknown": "\"Unknown\"",
   "gui.watch": "Watch \"{name}\"",
   "gui.title.versions": "Versions",
@@ -57,14 +58,6 @@
   "addon.Escudo-secundario.versions.1-0-0.images.0.description": "Comparison",
 
   "addon.ChoesinCraft.versions.1-0-0.description": "This was created for an old server",
-
-  "addon.Variantes-de-madera.versions.1-0-0.description": "Adds variations of blocks and items for each type of wood. A special table (carving table) is needed for crafting these objects. Below are the crafting recipes",
-  "addon.Variantes-de-madera.versions.1-0-0.images.0.description": "Carving table crafting",
-  "addon.Variantes-de-madera.versions.1-0-0.images.1.description": "Wooden stick crafting",
-  "addon.Variantes-de-madera.versions.1-0-0.images.2.description": "Armor stand crafting",
-  "addon.Variantes-de-madera.versions.1-0-0.images.3.description": "Crafting table crafting",
-  "addon.Variantes-de-madera.versions.1-0-0.images.4.description": "Chest crafting",
-  "addon.Variantes-de-madera.versions.1-0-0.images.5.description": "Bookshelf crafting",
 
   "addon.Fundas-de-equipamiento.versions.1-0-0.description": "Is an addon that changes the designs (not the 3D models) of shields, elytras, and tridents (these don't change much). It's recommended to use the texture #Secondary shield*/content/Secondary-shield# to prevent the designs from flipping",
   "addon.Fundas-de-equipamiento.versions.1-0-0.images.0.description": "Aga design",

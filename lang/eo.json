@@ -1,4 +1,5 @@
 {
+  "$refs": ["https://raw.githubusercontent.com/Aga-MCA/WoodVariants-Source/main/lang/eo.json"],
   "user.unknown": "\"Nekonata\"",
   "gui.watch": "Rigardi \"{name}\"",
   "gui.title.versions": "Versioj",
@@ -54,14 +55,6 @@
   "addon.Escudo-secundario.versions.1-0-0.images.0.description": "Komparo",
 
   "addon.ChoesinCraft.versions.1-0-0.description": "Kreita por malnova servilo",
-
-  "addon.Variantes-de-madera.versions.1-0-0.description": "Aldonas variaĵojn de blokoj kaj objektoj por ĉiu tipo de ligno, kiuj kreaspecialan tablon (tabelo de formado) por krei la objektojn. Jen la kreadoj de la objektoj",
-  "addon.Variantes-de-madera.versions.1-0-0.images.0.description": "Tabelo de formado-kreado",
-  "addon.Variantes-de-madera.versions.1-0-0.images.1.description": "Lignaj bastonoj-kreado",
-  "addon.Variantes-de-madera.versions.1-0.images.2.description": "Kreado de la armilaro-subtenilo",
-  "addon.Variantes-de-madera.versions.1-0-0.images.3.description": "Kreado de la kraftejo",
-  "addon.Variantes-de-madera.versions.1-0-0.images.4.description": "Kreado de la kestoj",
-  "addon.Variantes-de-madera.versions.1-0-0.images.5.description": "Kreado de la librejoj",
 
   "addon.Fundas-de-equipamiento.versions.1-0-0.description": "Kromprogramo kiu ŝanĝas la desegnojn (ne la 3D-modelojn) de ŝildoj, elitoj kaj tridentoj (tiuj ne multe ŝanĝiĝas). Oni rekomendas uzi la tekston #Escudo secundario*/content/Escudo-secundario# por ke la desegnoj ne volvu.",
   "addon.Fundas-de-equipamiento.versions.1-0-0.images.0.description": "Desegno Aga",

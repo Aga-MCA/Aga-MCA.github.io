@@ -17,7 +17,6 @@ export default async function loadApi(query={}) {
   const data = [];
   for (const preaddon of addons.content) {
     const addon = preaddon['$ref'] ? (await fetch(preaddon['$ref']).then(res => res.json())) : preaddon;
-    console.log(addon)
     const isType = query && query.type && query.type === addon.type;
     const isName =
       query && query.name && query.name.toLowerCase() === addon.name;
