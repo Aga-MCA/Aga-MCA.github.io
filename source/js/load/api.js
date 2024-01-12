@@ -11,11 +11,13 @@ import users from '../../../api/users.json' assert { type: 'json' };
  *  search?: string;
  * }} query
  */
-export default function loadApi(query) {
+export default async function loadApi(query={}) {
   query.type === 'all' && delete query.type;
   /** @type {[typeof addons['content'][2], boolean][]} */
   const data = [];
-  for (const addon of addons.content) {
+  for (const preaddon of addons.content) {
+    const addon = preaddon['$ref'] ? (await fetch(preaddon['$ref'], {mode:'no-cors'}).then(res => res.json())) : preaddon;
+    console.log(addon)
     const isType = query && query.type && query.type === addon.type;
     const isName =
       query && query.name && query.name.toLowerCase() === addon.name;
@@ -26,6 +28,7 @@ export default function loadApi(query) {
       (!query.type || isType) &&
       (!query.name || isName) &&
       (!query.search || isSearch);
+
     data.push([addon, isShow]);
   }
   return { data, users: users.content };

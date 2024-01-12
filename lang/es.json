@@ -1,4 +1,5 @@
 {
+  "$refs": ["https://raw.githubusercontent.com/Aga-MCA/WoodVariants-Source/main/lang/es.json"],
   "user.unknown": "\"Desconocido\"",
   "gui.watch": "Ver \"{name}\"",
   "gui.title.versions": "Versiones",

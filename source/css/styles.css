@@ -71,6 +71,9 @@ body {
         }
       }
     }
+    &.hide {
+      display: none;
+    }
   }
   > div#start {
     display: flex;

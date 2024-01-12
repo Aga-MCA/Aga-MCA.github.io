@@ -163,20 +163,31 @@ export function Content([item, show], users) {
           )
         : lang.get("gui.unknown.changes")
     );
+    const $link = createElementDom(
+      'div',
+      {
+        href: version.url,
+        class: 'mc-button',
+      },
+      lang.use('gui.button.install', version)
+    )
+    $link.addEventListener('click', async () => {
+      fetch($link.getAttribute('href'), {
+        "mode":"no-cors"
+      }).then(r => r.blob()).then(blob => {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${item.name.replaceAll(' ', '_')}-${version.version}.mcaddon`;
+        a.click();
+        URL.revokeObjectURL(url);
+      })
+    })
     const $download = createElementDom(
       'section',
       null,
       createElementDom('p', { class: 'title' }, lang.get('gui.title.download')),
-      createElementDom(
-        'a',
-        {
-          href: version.url,
-          class: 'mc-button',
-          target: '_blank',
-          rel: 'noopener noreferrer',
-        },
-        lang.use('gui.button.install', version)
-      )
+      $link
     );
     return createElementDom(
       'div',

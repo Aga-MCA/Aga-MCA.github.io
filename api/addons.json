@@ -1,6 +1,6 @@
 {
   "$schema": "../schemas/addon.json",
-  "content": [
+  "content": [{"$ref":"https://raw.githubusercontent.com/Aga-MCA/WoodVariants-Source/main/api.json"},
     {
       "name": "Home",
       "type": "addon",
@@ -214,48 +214,6 @@
         }
       ],
       "deprecated": true
-    },
-    {
-      "name": "Variantes de madera",
-      "type": "addon",
-      "author": 0,
-      "icon": "/source/image/addon/Variantes-de-madera/icon.png",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "date": "2021-04-22T20:05:53",
-          "changes": [],
-          "description": "addon.Variantes-de-madera.versions.1-0-0.description",
-          "images": [
-            {
-              "url": "/source/image/addon/Variantes-de-madera/mesa-de-tallado.gif",
-              "description": "addon.Variantes-de-madera.versions.1-0-0.images.0.description"
-            },
-            {
-              "url": "/source/image/addon/Variantes-de-madera/Palos.gif",
-              "description": "addon.Variantes-de-madera.versions.1-0-0.images.1.description"
-            },
-            {
-              "url": "/source/image/addon/Variantes-de-madera/soporte-de-armadura.gif",
-              "description": "addon.Variantes-de-madera.versions.1-0-0.images.2.description"
-            },
-            {
-              "url": "/source/image/addon/Variantes-de-madera/mesa-de-crafteo.png",
-              "description": "addon.Variantes-de-madera.versions.1-0-0.images.3.description"
-            },
-            {
-              "url": "/source/image/addon/Variantes-de-madera/Cofres.png",
-              "description": "addon.Variantes-de-madera.versions.1-0-0.images.4.description"
-            },
-            {
-              "url": "/source/image/addon/Variantes-de-madera/Librerias.png",
-              "description": "addon.Variantes-de-madera.versions.1-0-0.images.5.description"
-            }
-          ],
-          "tags": ["mesa", "cofre", "bloque", "herramientas"],
-          "url": "https://www.mediafire.com/file/33w1ylafln149fh/Variantes_de_maderas.mcaddon/file"
-        }
-      ]
     },
     {
       "name": "Fundas de equipamiento",

@@ -1,11 +1,14 @@
 import api from './api.js';
+import translate from "./translate.js";
 
 export default async function load() {
-  const $root = document.getElementById('root');
+  await translate()
   const { App } = await import('../components/App.js');
   const { Nav } = await import('../components/Nav.js');
+  const $root = document.querySelector('#root');
   Nav();
-  $root.appendChild(App());
+  const $app = await App()
+  $app && $root.appendChild($app);
   updateNav();
 }
 
@@ -18,11 +21,8 @@ function updateNav() {
   const $nav = document.querySelector('nav');
   for (const $item of $nav.querySelectorAll('a')) {
     $item.classList.remove('active');
-    console.log($item.getAttribute('href') ,
-    `/${query[0] === 'search' ? '' : query[0] || ''}`)
     if (
-      $item.getAttribute('href') ===
-      `/${query[0] === 'search' ? '' : query[0] || ''}`
+      $item.getAttribute('href').split('/')[1] === query[0]
     )
       $item.classList.add('active');
   }
@@ -38,9 +38,9 @@ export function reload() {
   $start.classList.add('hide');
   $content.classList.add('hide');
   if (query[0] === 'content') {
-    import('../components/Content.js').then(({ Content }) => {
+    import('../components/Content.js').then(async ({ Content }) => {
       const name = query[1].replaceAll('-', ' ').toLowerCase();
-      const { data, users } = api({ name });
+      const { data, users } = await api({ name });
       $content.classList.remove('hide');
       $content.appendChild(
         Content(
