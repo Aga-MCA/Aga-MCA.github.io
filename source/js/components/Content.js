@@ -163,19 +163,19 @@ export function Content([item, show], users) {
           )
         : lang.get("gui.unknown.changes")
     );
-    const $link = createElementDom(
-      'div',
-      {
-        href: version.url,
-        class: 'mc-button',
-      },
-      lang.use('gui.button.install', version)
-    )
     const $download = createElementDom(
       'section',
       null,
       createElementDom('p', { class: 'title' }, lang.get('gui.title.download')),
-      $link
+      createElementDom(
+        'a',
+        {
+          href: version.url,
+          class: 'mc-button',
+          target: '_blank',
+        },
+        lang.use('gui.button.install', version)
+      )
     );
     return createElementDom(
       'div',
