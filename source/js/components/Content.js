@@ -171,16 +171,6 @@ export function Content([item, show], users) {
       },
       lang.use('gui.button.install', version)
     )
-    $link.addEventListener('click', async () => {
-      fetch($link.getAttribute('href')).then(r => r.blob()).then(blob => {
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = `${item.name.replaceAll(' ', '_')}-${version.version}.mcaddon`;
-        a.click();
-        URL.revokeObjectURL(url);
-      })
-    })
     const $download = createElementDom(
       'section',
       null,
