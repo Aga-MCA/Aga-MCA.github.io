@@ -91,7 +91,7 @@ export function Content([item, show], users) {
   const $header = createElementDom(
     'div',
     { class: 'mc-header' },
-    Link('/', { class: 'mc-button' }, '<'),
+    Link('/all', { class: 'mc-button' }, '<'),
     createElementDom('p', null, lang.use('gui.watch', item))
   );
   const $data = createElementDom(
