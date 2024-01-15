@@ -122,6 +122,74 @@ body {
   }
 }
 
+@media (max-width: 800px) {
+  body {
+    > div#root {
+      width: 80%;
+    }
+    > div#start {
+      > a {
+        width: 40%;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  body {
+    > div#root {
+      width: 90%;
+    }
+    > div#start {
+      > a {
+        width: 55%;
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  body {
+    > div#root {
+      width: 100%;
+    }
+    > div#content .data-info {
+      display: flex;
+      flex-direction: column;
+      bottom: 0;
+      > .mc-data {
+        width: 100%;
+        height: 40%;
+      }
+      > .mc-info {
+        width: 100%;
+        height: 60%;
+      }
+    }
+  }
+  .mc-data {
+    > img {
+      --size-img: 90vw;
+    }
+  }
+}
+@media (max-width: 450px) {
+  body {
+    > div#start {
+      > a {
+        width: 70%;
+      }
+    }
+  }
+}
+@media (max-width: 350px) {
+  body {
+    > div#start {
+      > a {
+        width: 90%;
+      }
+    }
+  }
+}
+
 @keyframes fadeOutContainer {
   from {
     transform: translate(0, 0);
