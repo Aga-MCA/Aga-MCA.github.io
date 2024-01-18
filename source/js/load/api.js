@@ -28,8 +28,10 @@ export default async function loadApi(query={}) {
       (!query.name || isName) &&
       (!query.search || isSearch);
 
-    data.push([addon, isShow]);
+    const update = addon.versions.sort((a, b) => Date.parse(b.date) - Date.parse(a.date))[0].date;
+    data.push([addon, isShow, update]);
   }
+  data.sort((a, b) => Date.parse(b[2]) - Date.parse(a[2]));
   return { data, users: users.content };
 }
 

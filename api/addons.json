@@ -1,6 +1,12 @@
 {
   "$schema": "../schemas/addon.json",
-  "content": [{"$ref":"https://raw.githubusercontent.com/Aga-MCA/WoodVariants-Source/main/api.json"},{"$ref":"https://raw.githubusercontent.com/Aga-MCA/IronChest-Source/main/api.json"},
+  "content": [
+    {
+      "$ref": "https://raw.githubusercontent.com/Aga-MCA/WoodVariants-Source/main/api.json"
+    },
+    {
+      "$ref": "https://raw.githubusercontent.com/Aga-MCA/IronChest-Source/main/api.json"
+    },
     {
       "name": "Home",
       "type": "addon",
@@ -175,7 +181,16 @@
           "date": "2021-04-25T20:28:00",
           "changes": [],
           "description": "addon.ChoesinCraft.versions.1-0-0.description",
-          "tags": ["mesa", "bloque", "herramientas", "entidad", "mineral", "projectil", "JunSP13", "servidor"],
+          "tags": [
+            "mesa",
+            "bloque",
+            "herramientas",
+            "entidad",
+            "mineral",
+            "projectil",
+            "JunSP13",
+            "servidor"
+          ],
           "url": "https://www.mediafire.com/file/du063qv9gtiosxo/ChoesinCraft.mcaddon/file"
         }
       ],
