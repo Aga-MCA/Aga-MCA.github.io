@@ -1,5 +1,8 @@
 {
-  "$refs": ["https://raw.githubusercontent.com/Aga-MCA/WoodVariants-Source/main/lang/eo.json"],
+  "$refs": [
+    "https://raw.githubusercontent.com/Aga-MCA/WoodVariants-Source/main/lang/eo.json",
+    "https://raw.githubusercontent.com/Aga-MCA/IronChest-Source/main/lang/eo.json"
+  ],
   "user.unknown": "\"Nekonata\"",
   "gui.watch": "Rigardi \"{name}\"",
   "gui.title.versions": "Versioj",
@@ -26,17 +29,6 @@
   "addon.Waila.versions.1-0-0.changes.0": "Kreita la Waila-funkcio",
   "addon.Waila.versions.1-0-0.description": "Montras tion, kion vi rigardas, ĉu ento aŭ bloko, ĉu vanilla aŭ de alia kromprogramo. Ankaŭ estas agordebla per la Waila agordo",
   "addon.Waila.versions.3-0-0.changes.0": "Ĝisdatigita al Minecraft 1.19.60-API",
-
-  "addon.Iron-Chest.versions.1-0-0.changes.0": "Kreita la fera kesto",
-  "addon.Iron-Chest.versions.1-0-0.changes.1": "Kreita la ora kesto",
-  "addon.Iron-Chest.versions.1-0-0.changes.2": "Kreita la diamanta kesto",
-  "addon.Iron-Chest.versions.1-0-0.changes.3": "Kreita la kupra kesto",
-  "addon.Iron-Chest.versions.1-0-0.changes.4": "Kreita la vitro kesto",
-  "addon.Iron-Chest.versions.1-0-0.description": "Aldonas fera, ora, diamanta, kupra kaj vitro kestojn",
-  "addon.Iron-Chest.versions.1-0-1.changes.0": "Aldonita la netherrita kesto",
-  "addon.Iron-Chest.versions.1-0-1.changes.1": "Korektita la teksto de la kupra kesto",
-  "addon.Iron-Chest.versions.1-0-1.changes.2": "Fiksitaj la ora kesto-kraftoj",
-  "addon.Iron-Chest.versions.1-0-1.changes.3": "Aldonitaj la originalaj vitro-kestoj",
 
   "addon.Chisel.versions.1-0-0.description": "Simila kromprogramo al la Java mod, aldonante kraftojn kaj similajn funkciojn",
   "addon.Chisel.versions.1-0-0.images.0.description": "Chisel-kreado",

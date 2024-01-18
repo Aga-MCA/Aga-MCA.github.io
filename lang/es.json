@@ -1,5 +1,8 @@
 {
-  "$refs": ["https://raw.githubusercontent.com/Aga-MCA/WoodVariants-Source/main/lang/es.json"],
+  "$refs": [
+    "https://raw.githubusercontent.com/Aga-MCA/WoodVariants-Source/main/lang/es.json",
+    "https://raw.githubusercontent.com/Aga-MCA/IronChest-Source/main/lang/es.json"
+  ],
   "user.unknown": "\"Desconocido\"",
   "gui.watch": "Ver \"{name}\"",
   "gui.title.versions": "Versiones",
@@ -29,17 +32,6 @@
   "addon.Waila.versions.1-0-0.changes.0": "Se ha creado la funcion de el Waila",
   "addon.Waila.versions.1-0-0.description": "Te muestra lo que estas viendo ya sea una entidad o un bloque sea vanilla o de otro addon ademas de ser configurable con el Waila config",
   "addon.Waila.versions.3-0-0.changes.0": "Se actualizo a la api de Minecraft 1.19.60",
-
-  "addon.Iron-Chest.versions.1-0-0.changes.0": "Se ha creado el cofre de hierro",
-  "addon.Iron-Chest.versions.1-0-0.changes.1": "Se ha creado el cofre de oro",
-  "addon.Iron-Chest.versions.1-0-0.changes.2": "Se ha creado el cofre de diamante",
-  "addon.Iron-Chest.versions.1-0-0.changes.3": "Se ha creado el cofre de cobre",
-  "addon.Iron-Chest.versions.1-0-0.changes.4": "Se ha creado el cofre de cristal",
-  "addon.Iron-Chest.versions.1-0-0.description": "Agrega cofres de Hierro, Oro, Diamante, Cobre y Cristal",
-  "addon.Iron-Chest.versions.1-0-1.changes.0": "Se agrego el cofre de netherite",
-  "addon.Iron-Chest.versions.1-0-1.changes.1": "Se corrigio la textura del cofre de cobre",
-  "addon.Iron-Chest.versions.1-0-1.changes.2": "Se arreglaron los crafteos de el cofre de oro",
-  "addon.Iron-Chest.versions.1-0-1.changes.3": "Se agregaron las texturas originales de el Iron-Chest",
 
   "addon.Chisel.versions.1-0-0.description": "Es un addon similar al mod de java agregando crafteos y funcionalidades parecidas",
   "addon.Chisel.versions.1-0-0.images.0.description": "Crafteo del Chisel",

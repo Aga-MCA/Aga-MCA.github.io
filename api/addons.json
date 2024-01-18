@@ -1,6 +1,6 @@
 {
   "$schema": "../schemas/addon.json",
-  "content": [{"$ref":"https://raw.githubusercontent.com/Aga-MCA/WoodVariants-Source/main/api.json"},
+  "content": [{"$ref":"https://raw.githubusercontent.com/Aga-MCA/WoodVariants-Source/main/api.json"},{"$ref":"https://raw.githubusercontent.com/Aga-MCA/IronChest-Source/main/api.json"},
     {
       "name": "Home",
       "type": "addon",
@@ -60,40 +60,6 @@
           "date": "2023-02-16T15:50:27",
           "url": "https://www.mediafire.com/file/kodxdkz3t3i65rt/Waila-3.0.0.mcaddon/file",
           "changes": ["addon.Waila.versions.3-0-0.changes.0"]
-        }
-      ]
-    },
-    {
-      "name": "Iron Chest",
-      "type": "addon",
-      "author": 0,
-      "collaborators": [1],
-      "icon": "/source/image/addon/Iron-Chest/icon.png",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "date": "2022-07-22T13:57:48",
-          "tags": ["cofre"],
-          "changes": [
-            "addon.Iron-Chest.versions.1-0-0.changes.0",
-            "addon.Iron-Chest.versions.1-0-0.changes.1",
-            "addon.Iron-Chest.versions.1-0-0.changes.2",
-            "addon.Iron-Chest.versions.1-0-0.changes.3",
-            "addon.Iron-Chest.versions.1-0-0.changes.4"
-          ],
-          "description": "addon.Iron-Chest.versions.1-0-0.description",
-          "url": "https://www.mediafire.com/file/fcq4md6t1n8n0lj/Iron-Chest.mcaddon/file"
-        },
-        {
-          "version": "1.0.1",
-          "date": "2022-11-22T22:23:55",
-          "changes": [
-            "addon.Iron-Chest.versions.1-0-1.changes.0",
-            "addon.Iron-Chest.versions.1-0-1.changes.1",
-            "addon.Iron-Chest.versions.1-0-1.changes.2",
-            "addon.Iron-Chest.versions.1-0-1.changes.3"
-          ],
-          "url": "https://www.mediafire.com/file/octjzqg8u1zfoi5/Iron-Chest-v1.0.1.mcaddon/file"
         }
       ]
     },
