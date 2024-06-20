@@ -1,5 +1,5 @@
-import addons from '../../../api/addons.json' assert { type: 'json' };
-import users from '../../../api/users.json' assert { type: 'json' };
+const ADDONS = fetch('/api/addons.json').then(res => res.json());
+const USERS = fetch('/api/users.json').then(res => res.json());
 
 /**
  * @param {({
@@ -15,6 +15,8 @@ export default async function loadApi(query={}) {
   query.type === 'all' && delete query.type;
   /** @type {[typeof addons['content'][2], boolean][]} */
   const data = [];
+  const addons = await ADDONS;
+  const users = await USERS;
   for (const preaddon of addons.content) {
     const addon = preaddon['$ref'] ? (await fetch(preaddon['$ref']).then(res => res.json())) : preaddon;
     const isType = query && query.type && query.type === addon.type;
